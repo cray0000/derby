@@ -1,7 +1,7 @@
 {
   "name": "derby",
   "description": "MVC framework making it easy to write realtime, collaborative applications that run in both Node.js and browsers.",
-  "version": "0.6.0-alpha28",
+  "version": "0.6.0-alpha30",
   "homepage": "http://derbyjs.com/",
   "repository": {
     "type": "git",
@@ -9,11 +9,11 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha test/*.mocha.js; ./node_modules/.bin/jshint lib/*.js test/*.js"
+    "test": "./node_modules/.bin/mocha test/all/*.mocha.js; ./node_modules/.bin/jshint lib/*.js test/*.js"
   },
   "dependencies": {
-    "derby-parsing": "^0.2.2",
-    "derby-templates": "^0.1.13",
+    "derby-parsing": "^0.3.2",
+    "derby-templates": "^0.2.3",
     "html-util": "~0.2.1",
     "tracks": "^0.5.0",
     "racer": ">=0.6.0-alpha20 <0.6.0-alpha3 || >=0.6.0-alpha30 <0.6.0-alpha4",
@@ -22,10 +22,11 @@
     "resolve": "^0.6.3"
   },
   "devDependencies": {
-    "expect.js": "~0.3.1",
-    "express": "^3.4.8",
-    "jshint": "~2.4.4",
-    "mocha": "~1.17.1"
+    "expect.js": "^0.3.1",
+    "express": "^4.10.2",
+    "jshint": "^2.5.10",
+    "mocha": "^2.0.1",
+    "browserify": "^6.3.2"
   },
   "optionalDependencies": {},
   "engines": {}
